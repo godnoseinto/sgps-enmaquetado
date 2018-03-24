@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="pages/prueba/|pages/prueba/pruebas/|resources/|resources/components/|resources/components/bootstrap/|resources/components/bootstrap/css/|resources/components/bootstrap/fonts/|resources/components/bootstrap/js/|resources/components/dataTables/|resources/components/dataTables/media/css/|resources/components/dataTables/media/images/|resources/components/dataTables/media/js/|resources/components/dataTables/media/js/i18n/|resources/components/fullcalendar/|resources/components/fullcalendar/demos/|resources/components/fullcalendar/demos/json/|resources/components/fullcalendar/demos/php/|resources/components/fullcalendar/lib/|resources/components/fullcalendar/lib/cupertino/|resources/components/fullcalendar/lib/cupertino/images/|resources/components/fullcalendar/locale/|resources/css/|resources/decorators/|resources/decorators/menu/|resources/Paper/|resources/Paper/dist/|resources/Paper/dist/node/|resources/Paper/docs/|resources/Paper/docs/assets/css/|resources/Paper/docs/assets/js/|resources/Paper/docs/classes/|resources/Paper/examples/|resources/Paper/examples/Animated/|resources/Paper/examples/css/|resources/Paper/examples/Games/|resources/Paper/examples/JSON/|resources/Paper/examples/Rasters/|resources/Paper/examples/Scripts/|resources/Paper/examples/Tools/|resources/Paper/examples/Worker/|pages/" kind="src" path="src/main/webapp"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

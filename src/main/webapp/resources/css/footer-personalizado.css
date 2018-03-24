@@ -1,0 +1,20 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+.footer-personalizado {
+	background: #F5DEB3 !important;
+	/* For browsers that do not support gradients */
+	background: #F5DEB3 !important;
+	/* For Safari 5.1 to 6.0 */
+	background: #F5DEB3 !important;
+	/* For Opera 11.1 to 12.0 */
+	background: #F5DEB3, #FFFFFF !important;
+	/* For Firefox 3.6 to 15 */
+	background: #F5DEB3 !important;
+	/* Standard syntax (must be last) */
+}
