@@ -586,5 +586,13 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- ********************** termina lo necesario para MongoDB ********************** -->
+
+		<!-- Dependencia para inicio de sesion con facebook -->
+		<dependency>
+			<groupId>org.facebook4j</groupId>
+			<artifactId>facebook4j-core</artifactId>
+			<version>2.4.11</version>
+		</dependency>
+
 	</dependencies>
 </project>
