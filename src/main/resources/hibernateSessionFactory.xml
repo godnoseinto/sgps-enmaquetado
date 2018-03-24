@@ -48,6 +48,8 @@ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 			de JPA -->
 		<property name="packagesToScan">
 			<list>
+			<value>mx.ipn.escom.sgps.controlacceso.mapeo</value>
+			<value>mx.ipn.escom.sgps.controlacceso.mapeo.*</value>
 			</list>
 		</property>
 	</bean>
