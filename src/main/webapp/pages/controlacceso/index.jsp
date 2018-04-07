@@ -9,6 +9,7 @@
 </head>
 <body>
 	<!-- Body -->
+	<H1>Prueba</H1>
 </body>
 	</html>
 </jsp:root>
