@@ -17,5 +17,12 @@ public class InicioAct extends ActionSupport{
 		return "index";
 	}
 	
+	public String edit() {
+		return "edit";
+	}
+	public String editNew() {
+		return "editNew";
+	}
+	
 
 }

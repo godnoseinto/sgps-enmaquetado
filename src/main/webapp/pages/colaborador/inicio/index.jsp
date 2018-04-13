@@ -14,6 +14,7 @@
   <table class="table table-responsive">
     <thead>
       <tr>
+        <th scope="col">Id</th>
         <th scope="col">Nombre</th>
         <th scope="col">Correo</th>
         <th scope="col">Acciones</th>
@@ -21,48 +22,69 @@
     </thead>
     <tbody>
       <tr>
+        <td>1</td>
         <td>Manuel</td>
 		<td>manuel@mail.com</td>
         <td>
-		<button type="button" class="btn btn-primary btn-sm">
-  		<span class="glyphicon glyphicon-plus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm" >
-  		<span class="glyphicon glyphicon-minus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm"  >
-  		<span class="glyphicon glyphicon-pencil"></span>	
-		</button>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-plus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/2/edit">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-minus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/3/edit">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-pencil"></span>
+  		</a>
 		</td>
       </tr>
       <tr>
+        <td>2</td>
         <td>Cristian</td>
 		<td>cristian@mail.com</td>
         <td>
-		<button type="button" class="btn btn-primary btn-sm" >
-  		<span class="glyphicon glyphicon-plus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm" >
-  		<span class="glyphicon glyphicon-minus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm"  >
-  		<span class="glyphicon glyphicon-pencil"></span>	
-		</button>
-		</td>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-plus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-minus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-pencil"></span>
+  		</a>
+  		</td>
       </tr>
       <tr>
+        <td>3</td>
         <td>Jesús</td>
 		<td>jesus@mail.com</td>
         <td>
-		<button type="button" class="btn btn-primary btn-sm" >
-  		<span class="glyphicon glyphicon-plus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm" >
-  		<span class="glyphicon glyphicon-minus"></span>	
-		</button>
-		<button type="button" class="btn btn-primary btn-sm"  >
-  		<span class="glyphicon glyphicon-pencil"></span>	
-		</button>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-plus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-minus"></span>
+  		</a>
+		<a class="btn btn-default btn-primary btn-sm" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="''" />
+  		<span class="glyphicon glyphicon-pencil"></span>
+  		</a>
 		</td>
       </tr>
     </tbody>
