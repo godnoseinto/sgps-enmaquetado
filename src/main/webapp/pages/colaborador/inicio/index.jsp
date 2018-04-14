@@ -27,17 +27,17 @@
 		<td>manuel@mail.com</td>
         <td>
 		<a class="btn btn-default btn-primary btn-sm" 
-		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 		<s:property value="''" />
   		<span class="glyphicon glyphicon-plus"></span>
   		</a>
 		<a class="btn btn-default btn-primary btn-sm" 
-		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/2/edit">
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 		<s:property value="''" />
   		<span class="glyphicon glyphicon-minus"></span>
   		</a>
 		<a class="btn btn-default btn-primary btn-sm" 
-		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/3/edit">
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
 		<s:property value="''" />
   		<span class="glyphicon glyphicon-pencil"></span>
   		</a>
@@ -59,7 +59,7 @@
   		<span class="glyphicon glyphicon-minus"></span>
   		</a>
 		<a class="btn btn-default btn-primary btn-sm" 
-		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/2/edit">
 		<s:property value="''" />
   		<span class="glyphicon glyphicon-pencil"></span>
   		</a>
@@ -81,7 +81,7 @@
   		<span class="glyphicon glyphicon-minus"></span>
   		</a>
 		<a class="btn btn-default btn-primary btn-sm" 
-		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/2/edit">
 		<s:property value="''" />
   		<span class="glyphicon glyphicon-pencil"></span>
   		</a>
@@ -90,8 +90,13 @@
     </tbody>
   </table>
 </div>
-<button type="button" class="btn btn-primary">Agregar Colaborador</button>
-<button type="button" class="btn btn-primary">Regresar</button>
+	<a class="btn btn-default btn-primary" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="'Agregar Colaborador'" />
+  	</a><a class="btn btn-default btn-danger" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="'Cancelar'" />
+  	</a>
 
 </body>
 	</html>
