@@ -9,7 +9,14 @@
 </head>
 <body>
 	<!-- Body -->
-	<H1>Prueba</H1>
+	<a class="btn btn-default btn-primary" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="'Regresar'" />
+  	</a>
+	<a class="btn btn-default btn-primary" 
+		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+		<s:property value="'Guardar'" />
+  	</a>
 </body>
 	</html>
 </jsp:root>
