@@ -41,7 +41,7 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/navbar-personalizado.css"
 	type="text/css" />
-<link rel="stylesheet"
+	<link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/footer-personalizado.css"
 	type="text/css" />
 <link rel="stylesheet"
@@ -65,7 +65,9 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/bootstrap-clockpicker.css"
 	type="text/css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/gantt-master/dist/frappe-gantt.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/css/generaldesign.css"
+	type="text/css" />
 <decorator:head />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -76,10 +78,10 @@
 				<decorator:body />
 			</div>
 		</div>
-
-
+		
+		
 		<s:include value="footer.jsp" />
-
+		
 	</section>
 </body>
 	</html>

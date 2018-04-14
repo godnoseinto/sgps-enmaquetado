@@ -56,17 +56,17 @@ Titulos y secciones
 */
 .title {
 	margin: 0px 0px 20px 0px;
-	color: #590016;
+	color: #000000;
 }
 
 fieldset.form-section {
 	border: 2px solid rgb(80, 0, 20) !important;
 	padding: 10px 20px 20px 20px !important;
 	margin: 20px auto !important;
-	-webkit-box-shadow: 0px 0px 0px 0px #500014;
+	-webkit-box-shadow: 0px 0px 0px 0px #000000;
 	box-shadow: 0px 0px 0px 0px #000;
 	border-radius: 10px;
-	color: #500014
+	color: #000000
 }
 
 div.outter-section {
@@ -77,7 +77,7 @@ div.form-section {
 	border: 2px solid rgb(80, 0, 20) !important;
 	border-radius: 10px;
 	box-shadow: 0 0 0 0 #000;
-	color: #500014;
+	color: #000000;
 	margin: 0 0 20px !important;
 	padding: 0 20px 20px !important;
 	padding-top: 20px !important;
@@ -96,7 +96,7 @@ legend.form-section {
 	padding: 0px 0px 0px 0px;
 	margin-bottom: 0px;
 	border-bottom: none;
-	color: #590016;
+	color: #000000;
 }
 
 .section.first {
@@ -127,29 +127,32 @@ Botones
 	margin-right: 5px;
 }
 
-.transferselect-btn>.btn, .btn-default-eld {
-	background-color: #9C002F;
-	background-image: linear-gradient(to bottom, #9C002F 0%, #590016 100%);
+.transferselect-btn > .btn, 
+.btn-default-eld {
+	background-color: #000000;
+	background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
 	background-repeat: repeat-x;
 	text-shadow: none;
 	color: white !important;
-	border-color: #590016;
+	border-color: #000000;
 }
 
-.transferselect-btn>.btn:active, .btn-default-eld:active {
-	background-color: #9C002F !important;
+.transferselect-btn > .btn:active,
+.btn-default-eld:active {
+	background-color: #000000 !important;
 	/*background-image: linear-gradient(to top, #9C002F 0%, #590016 100%);
 	background-repeat: repeat-x;*/
 	color: white !important;
 }
 
-.transferselect-btn>.btn:hover, .btn-default-eld:hover {
-	background-color: #9C002F;
-	background-image: linear-gradient(to top, #9C002F 0%, #590016 100%);
+.transferselect-btn > .btn:hover,
+.btn-default-eld:hover {
+	background-color: #000000;
+	background-image: linear-gradient(to top, #000000 0%, #000000 100%);
 	background-repeat: repeat-x;
 	text-shadow: none;
 	color: white;
-	border-color: #590016;
+	border-color: #000000;
 }
 
 .btn-default-eld-grid {
@@ -191,8 +194,8 @@ Spinner
 Datepicker
 */
 .input-group-addon {
-	background-color: #9C002F;
-	border-color: #590016;
+	background-color: #000000;
+	border-color: #000000;
 	border: 1px 1px 1px 1px solid;
 }
 
@@ -318,24 +321,13 @@ Progressbar
 	color: white !important;
 	font-weight: bold !important;
 }
-
-.addon-size {
-	font-size: 14px !important;
+.addon-size{
+	font-size:14px !important;
 }
-
 .tooltip-inner {
-	max-width: 350px !important;
+    max-width: 350px !important; 
 }
 
 .error-ajax {
 	padding-left: 6px !important;
-}
-
-.container {
-			width: 80%;
-			margin: 0 auto;
-		}
-
-.gantt .bar-milestone .bar-progress {
-	fill: tomato;
 }

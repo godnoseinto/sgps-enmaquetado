@@ -1,0 +1,47 @@
+/**
+Estilos generales
+**/
+h1{
+       text-align:center;
+    }
+  .bg-1
+   th{
+       background-color: #1abc9c; /* Green */
+        color: #ffffff;
+    }
+  .footer-personalizado {
+    background: #2f3334 !important;
+    background: #2f3334 !important;
+    background: #2f3334 !important;
+    background: #2f3334, #FFFFFF !important;
+    background: #2f3334 !important;
+  }
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom:200px;
+}
+  
+   .navbar-personalizado {
+    background: #2f3334 !important;
+    background: -webkit-linear-gradient(#2f3334, #2f3334) !important;
+    background: -o-linear-gradient(#2f3334, #2f3334) !important;
+    background: -moz-linear-gradient(#2f3334, #2f3334) !important;
+    background: linear-gradient(#2f3334, #2f3334) !important;
+}
+
+.form {
+    background-color: #FFFFFF;
+    border: 4px solid;
+    border-color: rgb(0, 0, 20);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

@@ -26,20 +26,20 @@
         <td>Manuel</td>
 		<td>manuel@mail.com</td>
         <td>
-		<a class="btn btn-default btn-primary btn-sm" 
+		<a class="" 
 		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 		<s:property value="''" />
-  		<span class="glyphicon glyphicon-plus"></span>
+  		<i class="material-icons">&#xE8F4;</i>
   		</a>
-		<a class="btn btn-default btn-primary btn-sm" 
+		<a class="" 
 		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 		<s:property value="''" />
-  		<span class="glyphicon glyphicon-minus"></span>
+		<i class="material-icons">&#xE872;</i>
   		</a>
-		<a class="btn btn-default btn-primary btn-sm" 
+		<a class="" 
 		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
 		<s:property value="''" />
-  		<span class="glyphicon glyphicon-pencil"></span>
+		<i class="material-icons">&#xE150;</i>
   		</a>
 		</td>
       </tr>

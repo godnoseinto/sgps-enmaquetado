@@ -40,7 +40,7 @@
     </div>
     
     <div class="form-group">
-	<s:select 
+	<s:select 		
     			class="form-control"
     			list="#{'1':'Gerente','2':'Colaborador'}"
 				label="Rol"
@@ -59,13 +59,13 @@
             	label="Correo"
             	name="correo"/>
     </div>
+  	</div>
+	</fieldset>
 	<s:submit cssClass="btn btn-primary" value="Guardar"/>
 	<a class="btn btn-default btn-danger" 
 		href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
 		<s:property value="'Regresar'" />
   	</a>
-  	</div>
-	</fieldset>
 	</div>
     </s:form>
     </div>
