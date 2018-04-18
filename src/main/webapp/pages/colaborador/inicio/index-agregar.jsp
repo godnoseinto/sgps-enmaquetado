@@ -90,14 +90,6 @@
 	    </tbody>
 	  </table>
 	  
-	  <a class="btn btn-default btn-primary" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
-			<s:property value="'Agregar Colaborador'" />
-	  </a>
-	  <a class="btn btn-default btn-primary" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio!invitar">
-			<s:property value="'Invitar Colaborador'" />
-	  </a>
 	  <a class="btn btn-default btn-danger" 
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
 			<s:property value="'Regresar'" />

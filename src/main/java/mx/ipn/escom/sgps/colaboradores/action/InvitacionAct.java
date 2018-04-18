@@ -5,14 +5,13 @@ import org.apache.struts2.convention.annotation.Namespace;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Namespace("/colaborador")
-
-public class InicioAct extends ActionSupport{
-
+public class InvitacionAct extends ActionSupport {
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -4514286484266012200L;
-	
+	private static final long serialVersionUID = -7724656719800331372L;
+
 	public String index() {
 		return "index";
 	}
@@ -22,6 +21,5 @@ public class InicioAct extends ActionSupport{
 	public String editNew() {
 		return "editNew";
 	}
-	
 
 }
