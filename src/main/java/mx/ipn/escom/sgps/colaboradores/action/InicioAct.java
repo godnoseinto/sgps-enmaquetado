@@ -1,10 +1,12 @@
 package mx.ipn.escom.sgps.colaboradores.action;
 
+import org.apache.struts2.convention.annotation.AllowedMethods;
 import org.apache.struts2.convention.annotation.Namespace;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 @Namespace("/colaborador")
+@AllowedMethods({"invitar"})
 
 public class InicioAct extends ActionSupport{
 
@@ -22,6 +24,9 @@ public class InicioAct extends ActionSupport{
 	}
 	public String editNew() {
 		return "editNew";
+	}
+	public String invitar() {
+		return "invitar";
 	}
 	
 
