@@ -13,22 +13,26 @@
   
 	  	
 	    
-	    <div class="col-sm-6 text-left"> 
-			<h1>Editar tarea</h1>
-			
+	    <div class="col-sm-12 text-center">
+			   <span class="etiquetas-label">Proyecto : </span>
+			   <span class="etiquetas-label">Gestor de proyectos</span>
 		</div>
-		<div class="col-sm-6 text-center"> 
-			<h3>Herramientas</h3>
+		<div class="col-sm-12 text-center">
+			   <p>Aplicación Movil</p>
+		</div>
+		<div class="col-sm-12 text-center"> 
+			
 			<s:form id="frmLogin" method="post" theme="simple"
 				cssClass="form form-horizontal form-medium"
 				action="">
+				<h3>Editar Tarea</h3>
 				<!-- Tarea -->
-				<div class="form-group">
+				<div class="form-group col-sm-12">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						class="col-xs-2 col-sm-2 col-md-2 control-label">
 						<s:property value="'Nombre'" />
 					</label>
-					<div class="col-xs-12 col-sm-8 col-md-8">
+					<div class="col-xs-12 col-sm-10 col-md-10">
 						<s:textfield cssClass="form-control campo"
 							cssClassError="input-error" name="model.nombreT" id="txTarea" />
 						<s:fielderror fieldName="tarea" cssClass="error"
@@ -36,10 +40,10 @@
 					</div>
 				</div>
 				<!-- Inicio de la actividad -->
-				<div class="form-group">
+				<div class="form-group col-sm-6">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Inicio de la actividad'" /> </label>
+							value="'Inicio'" /> </label>
 					<div class="col-xs-12 col-sm-8 col-md-8 ">
 					
 					
@@ -52,10 +56,10 @@
 					</div>
 				</div>
 				<!-- Fin de la actividad -->
-				<div class="form-group">
+				<div class="form-group col-sm-6">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Fin de la actividad'" /> </label>
+							value="'Fin'" /> </label>
 					<div class="col-xs-12 col-sm-8 col-md-8 ">
 					
 					
@@ -67,36 +71,8 @@
 					   readonly="true" showAnim="fadeIn" minDate="+1y"/>
 					</div>
 				</div>
-				
-				<!-- Integrantes -->
-				<div class="form-group">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Integrantes'" /> </label>
-				</div>
-				<div class="form-group">
-					<div class="col-xs-12 col-sm-4 col-md-4 ">
-						<s:textarea cssClass="form-control campo" name="model.Descripcion" value="Juan"
-							cssClassError="input-error" id="txTarea" />
-						<s:fielderror fieldName="descripcion" cssClass="error"
-							theme="%{#varTheme}" />
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 ">
-						<s:submit cssClass="btn btn-default"
-						value="Aceptar" />
-						<s:submit cssClass="btn btn-default"
-						value="Eliminar" />
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 ">
-						<s:textarea cssClass="form-control campo" name="model.Descripcion"
-							cssClassError="input-error" id="txTarea" />
-						<s:fielderror fieldName="descripcion" cssClass="error"
-							theme="%{#varTheme}" />
-					</div>
-				</div>
-				
 				<!-- Prioridad -->
-				<div class="form-group">
+				<div class="form-group col-sm-6">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
 							value="'Prioridad'" /> </label>
@@ -108,12 +84,24 @@
 						</select>
 					</div>
 				</div>
-				<!-- Descripcion -->
-				<div class="form-group">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Descripcion'" /> </label>
+				<!-- Rol -->
+				<div class="form-group col-sm-6">
+					<label class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
+							value="'Rol'" /> </label>
 					<div class="col-xs-12 col-sm-8 col-md-8 ">
+						<select name="rol">
+						  <option>Programador</option>
+						  <option>Desarrollador</option>
+						  <option>Analista</option>
+						</select>
+					</div>
+				</div>
+				<!-- Descripcion -->
+				<div class="form-group col-sm-12">
+					<label
+						class="col-xs-2 col-sm-2 col-md-2 control-label"><s:property
+							value="'Descripcion'" /> </label>
+					<div class="col-xs-12 col-sm-10 col-md-10 ">
 						<s:textarea cssClass="form-control campo" name="model.Descripcion"
 							cssClassError="input-error" id="txTarea" />
 						<s:fielderror fieldName="descripcion" cssClass="error"
@@ -132,6 +120,7 @@
 		</div>
 	</div>
 </div>
+
 </body>
 	</html>
 </jsp:root>

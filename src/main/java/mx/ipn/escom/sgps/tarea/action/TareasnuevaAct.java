@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 @Namespace("/tarea")
 
-public class TareasAct extends ActionSupport{
+public class TareasnuevaAct extends ActionSupport{
 	/**
 	 * 
 	 */

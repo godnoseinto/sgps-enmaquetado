@@ -1,8 +1,9 @@
 /**
 Estilos generales
 **/
-h1{
-       text-align:center;
+.etiquetas-label{
+       color: black;
+       font-size:18px;
     }
   .bg-1
    th{
@@ -32,9 +33,25 @@ h1{
     background: linear-gradient(#2f3334, #2f3334) !important;
 }
 
+
+
 .form {
     background-color: #FFFFFF;
-    border: 4px solid;
+    border: 2px solid;
+    border-color: rgb(120, 190, 160);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-simple {
+    background-color: #FFFFFF;
+    border: 0px solid;
     border-color: rgb(0, 0, 20);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

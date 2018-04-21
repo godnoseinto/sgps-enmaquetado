@@ -11,10 +11,16 @@
 	<div class="container-fluid text-center">
 		<div class="row content">
 
-
-
 			<div class="col-sm-12 text-left">
-				<h1>Tareas del proyecto</h1>
+			   <span class="etiquetas-label">Proyecto : </span>
+			   <span class="etiquetas-label">Gestor de proyectos</span>
+			</div>
+				
+		    <div class="col-sm-12 text-left">
+			   <p>Aplicación Movil</p>
+			</div>
+			<div class="col-sm-12 text-left">
+				
 				<table class="table table-bordered table-hover table-condensed bg-1 table-responsive">
 					<thead>
 						<tr>
@@ -103,7 +109,15 @@
 							</td>
 
 						</tr>
-						
+						<s:iterator value="listTareas" var="tarea">
+							<tr>
+								<td><s:property value="%{#tarea.nombre}" /></td>
+								<td><s:property value="%{#tarea.id}" /></td>
+								<td><s:property value="%{#tarea.nombre}" /></td>
+								<td><s:property value="%{#tarea.idEstado}" /></td>
+								<td></td>
+							</tr>
+						</s:iterator>
 					</tbody>
 
 
@@ -114,20 +128,19 @@
 			<div class="col-sm-12 text-center"> 
 			
 			<s:form id="frmAddTarea" method="post" theme="simple"
-				cssClass="form form-horizontal form-medium"
+				cssClass="form form-horizontal form-medium form-simple"
 				action="">
 				<!-- Agregar Tarea -->
 				<div class="form-group">
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-						<select name="prioridad">
-						  <option>Programador</option>
-						  <option>Diseñador</option>
-						  <option>Analista</option>
-						</select>
+				    <div class="col-xs-12 col-sm-6 col-md-6 ">
+						 
+						<a class="btn btn-default btn-primary" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva">
+			<s:property value="'Nueva Tarea'" />
+	                    </a>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 ">
+					<div class="col-xs-12 col-sm-6 col-md-6 ">
 						<s:submit cssClass="btn btn-primary"
-						value="Nueva Tarea" />
+						value="Mostrar Gantt" />
 					</div>
 				</div>
 				
