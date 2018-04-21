@@ -9,7 +9,7 @@
 </head>
 <body>
 	<!-- Body -->
-	<H1>Prueba</H1>
+	<p>Este es un metodo fuera de la convencion</p>
 </body>
 	</html>
 </jsp:root>

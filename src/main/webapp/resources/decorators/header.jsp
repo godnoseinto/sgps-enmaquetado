@@ -22,56 +22,16 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<s:set var="usuario" value="%{#session['usuario']}" />
+				<s:set var="usuario" value="%{#session[@mx.ipn.escom.sgps.util.NombreObjetosSesion@USUARIO_SESION]}" />
+				<s:set var="LP" value="%{@mx.ipn.escom.sgps.controlacceso.mapeo.PerfilUsuarioEnum@LIDER_PROYECTO.getIdPerfil()}"/>
+				--${usuario.idPerfilActivo}--
 
 				<s:if test="#usuario eq 'alumno'">
 					<s:include value="./menu/alumno.jsp" />
 				</s:if>
-				<s:elseif test="#usuario eq 'entrevistador'">
-					<s:include value="./menu/entrevistador.jsp" />
+				<s:elseif test="#usuario.idPerfilActivo eq #LP">
+					<s:include value="./menu/liderProyecto.jsp" />
 				</s:elseif>
-				<!--<s:elseif test="#usuario eq 'aspirante_eld'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'pago_examen'">
-					<s:include value="./menu/aspirante.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'ceneval'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'gestion_entrevistas'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'evaluar_entrevistas'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'aplicacion_entrevistas'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'seleccion_estudiantes'">
-					<s:include value="./menu/eld.jsp" />
-				</s:elseif>-->
-				<s:elseif test="#usuario eq 'coordinacion_control_escolar'">
-					<s:include value="./menu/controlEscolar.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'secretaria_administracion'">
-					<s:include value="./menu/secretariaAdministracion.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'asistente_s_a'">
-					<s:include value="./menu/asistenteSecretariaAdministracion.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'coordinador_psicologo'">
-					<s:include value="./menu/coordinadorPsicologo.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'psicologo'">
-					<s:include value="./menu/psicologo.jsp" />
-				</s:elseif>
-				<s:elseif test="#usuario eq 'responsable_control_escolar'">
-				</s:elseif>
-				<s:elseif test="#usuario eq 'aspirante'">
-
-				</s:elseif>
-				<s:else></s:else>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>

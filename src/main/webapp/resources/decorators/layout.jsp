@@ -15,6 +15,12 @@
 	<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3" dir="ltr"
 		class="com_content view-article itemid-482 home j25 mm-hover no-touch uk-notouch wf--n4-active wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n3-active wf-active"
 		lang="es-MX">
+<jsp:text>
+	<![CDATA[
+		        <script src="${pageContext.request.contextPath}/resources/scripts/emeth-dataTables.js" type="text/javascript"></script>
+				<script src="${pageContext.request.contextPath}/example.js"  type="text/paperscript" canvas="canvas"></script>        
+			]]>
+</jsp:text>
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,7 +47,7 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/navbar-personalizado.css"
 	type="text/css" />
-	<link rel="stylesheet"
+<link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/footer-personalizado.css"
 	type="text/css" />
 <link rel="stylesheet"
@@ -78,10 +84,10 @@
 				<decorator:body />
 			</div>
 		</div>
-		
-		
+
+
 		<s:include value="footer.jsp" />
-		
+
 	</section>
 </body>
 	</html>

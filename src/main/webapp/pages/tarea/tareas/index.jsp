@@ -6,22 +6,19 @@
 	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- Head -->
+<jsp:text>
+	<![CDATA[
+		<script type="text/javascript" src="${pageContext.request.contextPath}/pages/tarea/tareas/js/index.js"></script>
+	]]>
+</jsp:text>
 </head>
 <body>
 	<div class="container-fluid text-center">
 		<div class="row content">
 
 			<div class="col-sm-12 text-left">
-			   <span class="etiquetas-label">Proyecto : </span>
-			   <span class="etiquetas-label">Gestor de proyectos</span>
-			</div>
-				
-		    <div class="col-sm-12 text-left">
-			   <p>Aplicación Movil</p>
-			</div>
-			<div class="col-sm-12 text-left">
-				
-				<table class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+				<h1>Tareas del proyecto</h1>
+				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
 					<thead>
 						<tr>
 

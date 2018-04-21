@@ -100,7 +100,7 @@
 	  </a>
 	  <a class="btn btn-default btn-danger" 
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
-			<s:property value="'Regresar'" />
+			<s:property value="%{getText('mx.ipn.escom.boton.registrar')}" />
 	  </a>
 </div>
 	

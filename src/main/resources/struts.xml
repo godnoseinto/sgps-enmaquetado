@@ -53,7 +53,7 @@
 		la vista -->
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
 
-	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.custom.i18n.resources" value="global,menu,aplicacion" />
 
 	<!-- Permite el uso de métodos estáticos por medio de OGNL -->
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
