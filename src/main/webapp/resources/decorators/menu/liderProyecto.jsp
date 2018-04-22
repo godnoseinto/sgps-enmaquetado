@@ -26,5 +26,10 @@
 			aria-expanded="false"><s:text
 					name="menu.lider_proyecto.proyecto" /><b class="caret"> <!--  --></b></a>
 		</li>
+		<li class="dropdown"><a title="${ttbCicloEscolar}"
+			data-toggle="dropdown" class="dropdown-toggle" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/colaboradores"
+			aria-expanded="false"><s:text
+					name="menu.lider_proyecto.colaborador" /><b class="caret"> <!--  --></b></a>
+		</li>
 	</ul>
 </jsp:root>

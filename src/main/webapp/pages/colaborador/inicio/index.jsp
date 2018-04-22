@@ -8,100 +8,94 @@
 	<!-- Head -->
 </head>
 <body>
+	
 	<!-- Body -->
  	<div class="container">
-	  <h2>Colaboradores</h2>           
+	  <h2>Bienvenido José Manuel</h2> 
+	  <h5>Tareas Asignadas</h5>
+	  
 	  <table class="table table-bordered table-hover table-condensed bg-1 table-responsive">
 	    <thead>
 	      <tr>
-	        <th scope="col">Id</th>
 	        <th scope="col">Nombre</th>
-	        <th scope="col">Correo</th>
+	        <th scope="col">Descripción</th>
+	        <th scope="col">Prioridad</th>
 	        <th scope="col">Acciones</th>
 	      </tr>
 	    </thead>
 	    <tbody>
 	      <tr>
-	        <td>1</td>
-	        <td>Manuel</td>
-			<td>manuel@mail.com</td>
+	        <td>Login</td>
+	        <td>Programar el login con las validaciones necesarias</td>
+	        <td>Media</td>
 	        <td>
 			<a class="" 
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 			<s:property value="''" />
-	  		<i class="material-icons">&#xE8F4;</i>
+	  		<i class="material-icons">&#xE037;</i>
 	  		</a>
 			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
+			href="">
 			<s:property value="''" />
-			<i class="material-icons">&#xE872;</i>
+			<i class="material-icons">&#xE034;</i>
 	  		</a>
 			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
+			href="">
 			<s:property value="''" />
-			<i class="material-icons">&#xE150;</i>
+			<i class="material-icons">&#xE047;</i>
 	  		</a>
 			</td>
-	      </tr>
+	      </tr>	
 	      <tr>
-	        <td>2</td>
-	        <td>Cristian</td>
-			<td>cristian@mail.com</td>
+	        <td>Registro</td>
+	        <td>Programar el registro y el envío de correo confirmación</td>
+	        <td>Baja</td>
 	        <td>
 			<a class="" 
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 			<s:property value="''" />
-	  		<i class="material-icons">&#xE8F4;</i>
+	  		<i class="material-icons">&#xE037;</i>
 	  		</a>
 			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
+			href="">
 			<s:property value="''" />
-			<i class="material-icons">&#xE872;</i>
+			<i class="material-icons">&#xE034;</i>
 	  		</a>
 			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
+			href="">
 			<s:property value="''" />
-			<i class="material-icons">&#xE150;</i>
-	  		</a>
-	  		</td>
-	      </tr>
-	      <tr>
-	        <td>3</td>
-	        <td>Jesús</td>
-			<td>jesus@mail.com</td>
-	        <td>
-			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
-			<s:property value="''" />
-	  		<i class="material-icons">&#xE8F4;</i>
-	  		</a>
-			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
-			<s:property value="''" />
-			<i class="material-icons">&#xE872;</i>
-	  		</a>
-			<a class="" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/1/edit">
-			<s:property value="''" />
-			<i class="material-icons">&#xE150;</i>
+			<i class="material-icons">&#xE047;</i>
 	  		</a>
 			</td>
-	      </tr>
+	      </tr>     
 	    </tbody>
-	  </table>
+	  </table> 
+	     
+	    <div class="row">
+	    <div class="col-md-3">
+	    	 <s:label value="Tiempo"/>
+	    </div>
+	    <div class="col-md-8">
+	     <div class="progress">
+  			<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">1.5 hrs</div>
+		</div>
+	     </div>
+	     </div>
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	           
+	  
 	  
 	  <a class="btn btn-default btn-primary" 
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
-			<s:property value="'Agregar Colaborador'" />
+			<s:property value="'Finalizar Tarea'" />
 	  </a>
-	  <a class="btn btn-default btn-primary" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio!invitar">
-			<s:property value="'Invitar Colaborador'" />
-	  </a>
-	  <a class="btn btn-default btn-danger" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
-			<s:property value="%{getText('mx.ipn.escom.boton.registrar')}" />
-	  </a>
+	  
 </div>
 	
 
