@@ -58,6 +58,11 @@
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE150;</i>
 						  		</a>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE7FE;</i>
+						  		</a>
 								</td>
 
 						</tr>
@@ -102,6 +107,10 @@
 								<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/new">
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE150;</i>
+						  		</a>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE7FE;</i>
 						  		</a>
 							</td>
 

@@ -8,119 +8,74 @@
 	<!-- Head -->
 </head>
 <body>
-<div class="container-fluid text-center">    
-	<div class="row content">
-  
-	  	
-	    
-	    <div class="col-sm-12 text-center">
-			   <span class="etiquetas-label">Proyecto : </span>
-			   <span class="etiquetas-label">Gestor de proyectos</span>
-		</div>
-		<div class="col-sm-12 text-center">
-			   <p>Aplicación Movil</p>
-		</div>
-		<div class="col-sm-12 text-center"> 
-			
-			<s:form id="frmLogin" method="post" theme="simple"
-				cssClass="form form-horizontal form-medium"
-				action="">
-				<h3>Asignar Tarea</h3>
-				<!-- Tarea -->
-				<div class="form-group col-sm-12">
-					<label
-						class="col-xs-2 col-sm-2 col-md-2 control-label">
-						<s:property value="'Nombre'" />
-					</label>
-					<div class="col-xs-12 col-sm-10 col-md-10">
-						<s:textfield cssClass="form-control campo"
-							cssClassError="input-error" name="model.nombreT" id="txTarea" />
-						<s:fielderror fieldName="tarea" cssClass="error"
-							theme="%{#varTheme}" />
-					</div>
-				</div>
-				<!-- Inicio de la actividad -->
-				<div class="form-group col-sm-6">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Inicio'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-					
-					
-	                  <sj:datepicker value="today" id="dpkInicio" name="cuentaSel.inicio" displayFormat="dd.mm.yy" 
-					  label="Today" 
-					  cssClass="form-control date-picker" 
-					  showOn="focus"
-					   changeYear="true" changeMonth="true" inputAppndIcon="calendar"
-					   readonly="true" showAnim="fadeIn" minDate="+1y"/>
-					</div>
-				</div>
-				<!-- Fin de la actividad -->
-				<div class="form-group col-sm-6">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Fin'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-					
-					
-	                  <sj:datepicker value="today" id="dpkFin" name="cuentaSel.fin" displayFormat="dd.mm.yy" 
-					  label="Today" 
-					  cssClass="form-control date-picker" 
-					  showOn="focus"
-					   changeYear="true" changeMonth="true" inputAppndIcon="calendar"
-					   readonly="true" showAnim="fadeIn" minDate="+1y"/>
-					</div>
-				</div>
-				<!-- Prioridad -->
-				<div class="form-group col-sm-6">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Prioridad'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-						<select name="prioridad">
-						  <option>Alta</option>
-						  <option>Media</option>
-						  <option>Baja</option>
-						</select>
-					</div>
-				</div>
-				<!-- Rol -->
-				<div class="form-group col-sm-6">
-					<label class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Rol'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-						<select name="rol">
-						  <option>Programador</option>
-						  <option>Desarrollador</option>
-						  <option>Analista</option>
-						</select>
-					</div>
-				</div>
-				<!-- Descripcion -->
-				<div class="form-group col-sm-12">
-					<label
-						class="col-xs-2 col-sm-2 col-md-2 control-label"><s:property
-							value="'Descripcion'" /> </label>
-					<div class="col-xs-12 col-sm-10 col-md-10 ">
-						<s:textarea cssClass="form-control campo" name="model.Descripcion"
-							cssClassError="input-error" id="txTarea" />
-						<s:fielderror fieldName="descripcion" cssClass="error"
-							theme="%{#varTheme}" />
-					</div>
-				</div>
-				
-				<!-- BOTON ACEPTAR -->
-				<div class="form-group">
-					<s:submit cssClass="btn btn-primary"
-						value="aceptar" />
-				</div>
-				
-			</s:form>
-			
-		</div>
-	</div>
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      
+      <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Colaboradores</strong></p>
+        Aquí esta tu equipo de trabajo que colabora en esta actividad
+      </div>
+      <p><a href="#">Juan</a></p>
+      
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Status: Activo</p>
+                 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>John</p>
+          
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Es ingeniero egresado de ... trabajo en</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Veronica</p>
+          
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Ingeniera de la carerra de.............................................</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Ultimas Actualizaciones:</p>
+       
+        <p><strong>Gestor de proyectos</strong></p>
+        <p>Vier. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+      <div class="well">
+        <p>Mensajes</p>
+      </div>
+    </div>
+  </div>
 </div>
-
 </body>
 	</html>
 </jsp:root>
