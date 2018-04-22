@@ -17,19 +17,32 @@
 </jsp:text>
 </head>
 <body>
-	<div class="container-fluid text-center">
-		<div class="row content">
 
-		   <div id="canvas-holder" style="width:40%">
+
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-10">
+       <span class="etiquetas-label">Proyecto : </span>
+	   <span class="etiquetas-label">Gestor de proyectos</span>
+    </div>
+    <div class="col-sm-10">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+            
+            <div id="canvas-holder" class="col-sm-12">
 		      <canvas id="canvas"></canvas>
 	       </div>
 	       <jsp:text>
 	<![CDATA[
 		<script>
-		var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 		var color = Chart.helpers.color;
 		var barChartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
 			datasets: [{
 				label: 'Entregables%',
 				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
@@ -78,6 +91,45 @@
 					}
 				}
 			});
+			
+			
+			
+			
+			
+			var barChartData2 = {
+			labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
+			datasets: [{
+				label: 'Desempeño%',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+				data: [
+					54, 
+					53, 
+					54, 
+					39, 
+					16, 
+					68, 
+					12
+				]
+			}]
+
+		};
+			var ctx2 = document.getElementById('canvas2').getContext('2d');
+			window.myBar = new Chart(ctx2, {
+				type: 'bar',
+				data: barChartData2,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Mi desempeño'
+					}
+				}
+			});
 
 		};
 
@@ -86,6 +138,77 @@
 		</script>
 	]]>
 </jsp:text>
+            
+            
+              <a class="btn btn-default btn-sm btn-primary" href="${#pageContext.request.contextPath}">
+			<s:property value="'Imprimir'" />
+	                    </a>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+            
+            <div id="canvas-holder2" class="col-sm-12">
+		      <canvas id="canvas2"></canvas>
+	       </div>
+
+            
+            
+              <a class="btn btn-default btn-sm btn-primary" href="${#pageContext.request.contextPath}">
+			<s:property value="'Imprimir'" />
+	                    </a>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+         
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Ultimas Actualizaciones:</p>
+       
+        <p><strong>Gestor de proyectos</strong></p>
+        <p>Vier. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+      <div class="well">
+        <p>Mensajes</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+
+		   
 		</div>
 	</div>
 </body>

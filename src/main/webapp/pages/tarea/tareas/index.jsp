@@ -136,8 +136,9 @@
 	                    </a>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 ">
-						<s:submit cssClass="btn btn-primary"
-						value="Mostrar Gantt" />
+						<a class="btn btn-default btn-primary" href="${#pageContext.request.contextPath}/sgps-enmaquetado/productividad/">
+			<s:property value="'Estadisticas'" />
+	                    </a>
 					</div>
 				</div>
 				
