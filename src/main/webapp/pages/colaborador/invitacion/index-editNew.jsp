@@ -26,13 +26,18 @@
 									name="Area" />
 							</div>
 							<div class="form-group">
+								<s:select class="form-control"
+									list="#{'1':'Programador','2':'Analista'}" label="Rol"
+									name="Area" />
+							</div>
+							<div class="form-group">
 								<s:textfield class="form-control" label="Correo" name="correo" type="email" placeholder="email@mail.com"/>
 							</div>
 						</div>
 					</fieldset>
 					<s:submit cssClass="btn btn-primary" value="Invitar" />
 					<a class="btn btn-default btn-danger"
-						href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio">
+						href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/invitacion/">
 						<s:property value="'Regresar'" />
 					</a>
 				</div>

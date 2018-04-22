@@ -9,31 +9,40 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Agregar Colaborador</h2>
+		<h2>Invitaciones</h2>
 		<table class="table table-bordered table-hover tablecondensed bg-1 table-responsive">
 			<thead>
 				<tr>
-					<th scope="col">Id</th>
-					<th scope="col">Nombre</th>
+					<th scope="col">Proyecto</th>
+					<th scope="col">Colaborador</th>
 					<th scope="col">Correo</th>
-					<th scope="col">Acciones</th>
+					<th scope="col">Estatus</th>
 				</tr>
 			</thead>
 			<tbody>
-				<td>1</td>
-				<td>Raul</td>
-				<td>raul@mail.com</td>
-				<td>
-					<a>
-						<s:property value="" />
-						<i class="material-icons">&#xE7FE;</i>
-					</a>
-				</td>
+				<tr>
+				<td>Sistema Bancario</td>
+				<td>Manuel</td>
+				<td>manuel@mail.com</td>
+				<td class="alert alert-info">Pendiente</td>
+				</tr>
+				<tr>
+				<td>Sistema de Nomina</td>
+				<td>Cristian</td>
+				<td>cristian@mail.com</td>
+				<td class="alert alert-success">Aceptada</td>
+				</tr>
+				<tr>
+				<td>Sistema Bancario</td>
+				<td>Jesús</td>
+				<td>jesus@mail.com</td>
+				<td class="alert alert-danger">Rechazada</td>
+				</tr>
 			</tbody>
 		</table>
 	  	<a class="btn btn-default btn-primary" 
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/new">
-			<s:property value="'Regresar'" />
+			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/invitacion/new">
+			<s:property value="'Invitar Colaborador'" />
 	  </a>
 	</div>
 </body>
