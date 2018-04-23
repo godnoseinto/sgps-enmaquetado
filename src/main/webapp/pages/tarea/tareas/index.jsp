@@ -9,13 +9,21 @@
 <jsp:text>
 	<![CDATA[
 		<script type="text/javascript" src="${pageContext.request.contextPath}/pages/tarea/tareas/js/index.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	]]>
 </jsp:text>
 </head>
 <body>
-	<div class="container-fluid text-center">
-		<div class="row content">
 
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#tareas">Tareas</a></li>
+  <li><a data-toggle="tab" href="#gantt">Gantt</a></li>
+</ul>
+
+	<div class="container-fluid text-center">
+		<div class="row content tab-content">
+<div id="tareas" class="tab-pane fade in active">
 			<div class="col-sm-12 text-left">
 				<h1>Tareas del proyecto</h1>
 				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
@@ -152,8 +160,18 @@
 				</div>
 				
 			</s:form>
+			</div>
+		</div>
+		
+		 <div id="gantt" class="tab-pane fade">
+    <h2>Gantt</h2>
+    
+		<div class="col-sm-12 text-center"> 
+			
+			
 			
 		</div>
+  </div>
 		</div>
 	</div>
 </body>

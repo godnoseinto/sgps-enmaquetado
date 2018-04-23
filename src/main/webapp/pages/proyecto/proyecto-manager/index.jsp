@@ -45,13 +45,13 @@
 								<td><s:date var="fhFin" format="dd/MMM/yy" name="#pro.fin" />
 									<s:property value="#fhFin" /></td>
 								<td><a class=""
-									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/">
 										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
 								</a> <a class=""
 									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
 										<s:property value="''" /> <i class="material-icons">&#xE872;</i>
 								</a> <a class=""
-									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/new">
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/new">
 										<s:property value="''" /> <i class="material-icons">&#xE150;</i>
 								</a></td>
 							</tr>
