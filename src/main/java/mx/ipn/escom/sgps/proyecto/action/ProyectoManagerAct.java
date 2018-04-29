@@ -32,6 +32,14 @@ public class ProyectoManagerAct extends ActionSupport {
 		return "editNew";
 	}
 
+	public String edit() {
+		return "edit";
+	}
+
+	public String show() {
+		return "show";
+	}
+
 	public List<Proyecto> getListProyecto() {
 		return listProyecto;
 	}

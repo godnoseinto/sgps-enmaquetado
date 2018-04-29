@@ -9,6 +9,10 @@
 </head>
 <body>
 	<!-- Body -->
+	<!-- variables -->
+	<s:set var="listProyectos"
+		value="{{'ProyectoUno','Colaborador','01/04/2018','15/04/2023','En progreso','5','1','1'},{'ProyectoDos','lider','01/04/2019','15/04/2023','Pausado','15','2','2'},{'ProyectoTres','lider','01/04/2018','15/04/2022','Creado','0','3','2'}}"></s:set>
+
 	<div class="container-fluid text-center">
 		<div class="row content">
 			<div class="col-md-12">
@@ -34,26 +38,73 @@
 							<th><s:text name="CUP1_THEAD2" /></th>
 							<th><s:text name="CUP1_THEAD3" /></th>
 							<th><s:text name="CUP1_THEAD4" /></th>
+							<th><s:text name="CUP1_THEAD5" /></th>
+							<th><s:text name="CUP1_THEAD6" /></th>
+							<th><s:text name="CUP1_THEAD7" /></th>
 						</tr>
 					</thead>
 					<tbody>
-						<s:iterator value="listProyecto" var="pro">
+						<s:iterator value="listProyectos" var="pro">
 							<tr>
-								<td><s:property value="#pro.nombre" /></td>
-								<td><s:date var="fhInicio" format="dd/MMM/yy"
-										name="#pro.inicio" /> <s:property value="#fhInicio" /></td>
-								<td><s:date var="fhFin" format="dd/MMM/yy" name="#pro.fin" />
-									<s:property value="#fhFin" /></td>
-								<td><a class=""
-									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/">
-										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
-								</a> <a class=""
-									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/inicio/">
-										<s:property value="''" /> <i class="material-icons">&#xE872;</i>
-								</a> <a class=""
-									href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/new">
-										<s:property value="''" /> <i class="material-icons">&#xE150;</i>
-								</a></td>
+								<td><s:property value="#pro[0]" /></td>
+								<td><s:property value="#pro[1]" /></td>
+								<td><s:property value="#pro[2]" /></td>
+								<td><s:property value="#pro[3]" /></td>
+								<td><s:property value="#pro[4]" /></td>
+								<td><s:property value="#pro[5]" /></td>
+								<td><s:if test="%{#pro[6] eq '1' and #pro[7] eq '1'}">
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1/edit">
+											<s:property value="''" /> <i class="material-icons">&#xE3E0;</i>
+										</a>
+									</s:if> <s:if
+										test="%{#pro[6] eq '1' and (#pro[7] eq '2' or #pro[7] eq '3')}">
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1/edit">
+											<s:property value="''" /> <i class="material-icons">&#xE150;</i>
+										</a>
+										<a class="" href="#"> <s:property value="''" /> <i
+											class="material-icons">&#xE872;</i>
+										</a>
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1">
+											<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+										</a>
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas">
+											<s:property value="''" /> <i class="material-icons">&#xE8B8;</i>
+										</a>
+									</s:if> <s:if
+										test="%{#pro[6] eq '2' and (#pro[7] eq '2' or #pro[7] eq '3')}">
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1/edit">
+											<s:property value="''" /> <i class="material-icons">&#xE150;</i>
+										</a>
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1">
+											<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+										</a>
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas">
+											<s:property value="''" /> <i class="material-icons">&#xE8B8;</i>
+										</a>
+
+									</s:if> <s:if
+										test="%{#pro[6] eq '3' and (#pro[7] eq '2' or #pro[7] eq '3')}">
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1/edit">
+											<s:property value="''" /> <i class="material-icons">&#xE150;</i>
+										</a>
+										<a class="" href="#"> <s:property value="''" /> <i
+											class="material-icons">&#xE8F4;</i>
+										</a>
+										<a class=""
+											href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas">
+											<s:property value="''" /> <i class="material-icons">&#xE8B8;</i>
+										</a><a class="" href="#"> <s:property value="''" /> <i
+											class="material-icons">&#xE872;</i>
+										</a>
+									</s:if></td>
 							</tr>
 						</s:iterator>
 					</tbody>

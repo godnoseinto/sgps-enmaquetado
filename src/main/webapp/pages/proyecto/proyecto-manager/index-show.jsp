@@ -13,7 +13,7 @@
 		<div class="row content">
 			<div class="col-md-12">
 				<h1 class="title">
-					<s:property value="%{getText('CUP2_TITLE')}" />
+					<s:property value="%{getText('CUP4_TITLE')}" />
 				</h1>
 			</div>
 
@@ -26,18 +26,17 @@
 
 			<fieldset class="form form-horizontal form-medium">
 				<legend class="form-section">
-					<s:text name="CUP2_SUBTITLE" />
+					<s:text name="CUP4_SUBTITLE" />
 				</legend>
 
 				<!-- Nombre proyecto -->
 				<div class="form-group">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL1')}" />
+						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						<s:property value="%{getText('CUP4_LBL1')}" />
 					</label>
-					<div class="col-xs-12 col-sm-8 col-md-8">
-						<s:textfield cssClass="form-control campo"
-							cssClassError="input-error" name="model.login" id="txUsuario" />
+					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
+						<s:property value="'Proyecto Uno'"/>
 						<s:fielderror fieldName="login" cssClass="error"
 							theme="%{#varTheme}" />
 					</div>
@@ -46,8 +45,8 @@
 				<!-- Nombre proyecto -->
 				<div class="form-group">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL2')}" />
+						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						<s:property value="%{getText('CUP4_LBL2')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
 						<s:property value="'Carla Sanchez Vera'" />
@@ -57,41 +56,33 @@
 				<!-- Fecha Inicio -->
 				<div class="form-group">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL3')}" />
+						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						<s:property value="%{getText('CUP4_LBL3')}" />
 					</label>
-					<div class="col-xs-12 col-sm-8 col-md-8">
-						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
-							cssClass="form-control date-picker" showOn="focus"
-							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
-							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
-							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" />
+					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
+						<s:property value="'02/may/2018'"/>
 					</div>
 				</div>
 
 				<!-- Fecha Término -->
 				<div class="form-group">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL4')}" />
+						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						<s:property value="%{getText('CUP4_LBL4')}" />
 					</label>
-					<div class="col-xs-12 col-sm-8 col-md-8">
-						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
-							cssClass="form-control date-picker" showOn="focus"
-							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
-							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
-							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" />
+					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
+						<s:property value="'02/may/2023'"/>
 					</div>
 				</div>
 
 				<!-- Fecha Inicio -->
 				<div class="form-group">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL5')}" />
+						class="col-xs-2 col-sm-4 col-md-4 control-label">
+						<s:property value="%{getText('CUP4_LBL5')}" />
 					</label>
-					<div class="col-xs-12 col-sm-8 col-md-8">
-						<s:textarea cols="60" />
+					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
+						<s:property value="'Esta es una descripción'"/>
 					</div>
 				</div>
 

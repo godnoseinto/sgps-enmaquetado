@@ -21,8 +21,9 @@ import mx.ipn.escom.sgps.util.SessionManager;
 
 @Namespace("/controlacceso")
 @Results({ @Result(name = IniciarSesionAct.INICIA_FACEBOOK, location = "%{url}", type = "redirect"),
-		@Result(name = IniciarSesionAct.RESULT_LOGIN, location = "bienvenida/new", type = "redirectAction") })
-@AllowedMethods({ "iniciarFacebook", "iniciarSesion" })
+		@Result(name = IniciarSesionAct.RESULT_LOGIN, location = "bienvenida/new", type = "redirectAction"),
+		@Result(name = "success", location = "iniciar-sesion", type = "redirectAction") })
+@AllowedMethods({ "iniciarFacebook", "iniciarSesion", "terminarSesion" })
 public class IniciarSesionAct extends ActionSupport {
 
 	/**
@@ -103,6 +104,11 @@ public class IniciarSesionAct extends ActionSupport {
 		}
 
 		return INVALID_LOGIN;
+	}
+
+	public String terminarSesion() {
+		SessionManager.clear();
+		return "success";
 	}
 
 	public FacebookBs getFacebookBs() {

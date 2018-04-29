@@ -13,7 +13,7 @@
 		<div class="row content">
 			<div class="col-md-12">
 				<h1 class="title">
-					<s:property value="%{getText('CUP2_TITLE')}" />
+					<s:property value="%{getText('CUP3_TITLE')}" />
 				</h1>
 			</div>
 
@@ -26,18 +26,18 @@
 
 			<fieldset class="form form-horizontal form-medium">
 				<legend class="form-section">
-					<s:text name="CUP2_SUBTITLE" />
+					<s:text name="CUP3_SUBTITLE" />
 				</legend>
 
 				<!-- Nombre proyecto -->
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL1')}" />
+						<s:property value="%{getText('CUP3_LBL1')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<s:textfield cssClass="form-control campo"
-							cssClassError="input-error" name="model.login" id="txUsuario" />
+							cssClassError="input-error" name="model.login" id="txUsuario"  value="Proyecto Dos"/>
 						<s:fielderror fieldName="login" cssClass="error"
 							theme="%{#varTheme}" />
 					</div>
@@ -47,7 +47,7 @@
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL2')}" />
+						<s:property value="%{getText('CUP3_LBL2')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
 						<s:property value="'Carla Sanchez Vera'" />
@@ -58,14 +58,14 @@
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL3')}" />
+						<s:property value="%{getText('CUP3_LBL3')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
 							cssClass="form-control date-picker" showOn="focus"
 							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
 							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
-							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" />
+							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" value="02/may/2018"/>
 					</div>
 				</div>
 
@@ -73,14 +73,14 @@
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL4')}" />
+						<s:property value="%{getText('CUP3_LBL4')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
 							cssClass="form-control date-picker" showOn="focus"
 							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
 							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
-							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" />
+							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" value="02/may/2023"/>
 					</div>
 				</div>
 
@@ -88,10 +88,24 @@
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP2_LBL5')}" />
+						<s:property value="%{getText('CUP3_LBL5')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<s:textarea cols="60" />
+					</div>
+				</div>
+				
+				<!-- Estado -->
+				<div class="form-group">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP3_LBL5')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<s:select id="slcListEstadoProyecto" list="#{'1':'Creado','2':'En progreso','3':'Pausado','4':'Cancelado','5','Finalizado'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
 					</div>
 				</div>
 

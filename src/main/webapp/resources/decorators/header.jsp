@@ -7,7 +7,7 @@
 	<jsp:directive.page language="java"
 		contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" />
 	<nav role="navigation"
-		class="navbar navbar-default navbar-fixed-top navbar-personalizado">
+		class="navbar navbar-fixed-top navbar-collapse navbar-personalizado">
 		<div class="container">
 			<div class="navbar-header page-scroll">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -22,8 +22,10 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<s:set var="usuario" value="%{#session[@mx.ipn.escom.sgps.util.NombreObjetosSesion@USUARIO_SESION]}" />
-				<s:set var="LP" value="%{@mx.ipn.escom.sgps.controlacceso.mapeo.PerfilUsuarioEnum@LIDER_PROYECTO.getIdPerfil()}"/>
+				<s:set var="usuario"
+					value="%{#session[@mx.ipn.escom.sgps.util.NombreObjetosSesion@USUARIO_SESION]}" />
+				<s:set var="LP"
+					value="%{@mx.ipn.escom.sgps.controlacceso.mapeo.PerfilUsuarioEnum@LIDER_PROYECTO.getIdPerfil()}" />
 				--${usuario.idPerfilActivo}--
 
 				<s:if test="#usuario eq 'alumno'">
@@ -32,9 +34,21 @@
 				<s:elseif test="#usuario.idPerfilActivo eq #LP">
 					<s:include value="./menu/liderProyecto.jsp" />
 				</s:elseif>
+
+				<s:if test="#usuario neq null">
+					<div
+						class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+						<a
+							href="${#pageContext.request.contextPath}/sgps-enmaquetado/controlacceso/iniciar-sesion!terminarSesion">
+							<s:property value="#usuario" /><i class="material-icons">&#xE8FB;</i>
+						</a>
+					</div>
+				</s:if>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
+
+
 		<!-- /.container -->
 	</nav>
 </jsp:root>

@@ -152,4 +152,9 @@ public class Usuario implements Modelo, Serializable {
 	public void setIdPerfilActivo(Integer idPerfilActivo) {
 		this.idPerfilActivo = idPerfilActivo;
 	}
+
+	@Override
+	public String toString() {
+		return nombre + " " + primerAp + " " + segundoAp;
+	}
 }
