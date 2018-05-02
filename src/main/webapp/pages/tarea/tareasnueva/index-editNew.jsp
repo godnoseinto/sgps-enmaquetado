@@ -54,7 +54,7 @@
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE7FE;</i>
 						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -73,7 +73,7 @@
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE7FE;</i>
 						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -92,7 +92,7 @@
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE7FE;</i>
 						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -129,7 +129,7 @@
 								   <s:property value="''" />
 								   <i class="material-icons">&#xE5C9;</i>
 						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>

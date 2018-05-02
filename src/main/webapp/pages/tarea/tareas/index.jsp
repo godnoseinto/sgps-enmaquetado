@@ -202,7 +202,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -218,7 +218,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -234,7 +234,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -270,7 +270,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -286,7 +286,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>
@@ -302,7 +302,7 @@
 
 							<td>
 						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
 					               <s:property value="''" />
 			  		               <i class="material-icons">&#xE8F4;</i>
 			  		            </a>

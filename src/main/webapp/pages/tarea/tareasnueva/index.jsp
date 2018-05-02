@@ -73,16 +73,21 @@
 				
 			<!-- Fecha Término -->
 			<div class="form-group col-sm-6">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP5_LBL4')}" />
-					</label>
+			        <s:radio label="fechafin" name="fechafin" list="#{'1':'Fin'}" value="1" class="col-xs-2 col-sm-2 col-md-2 control-label label-obligatorio"/>
+					
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
 							cssClass="form-control date-picker" showOn="focus"
 							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
 							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
 							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" value="02/may/2023"/>
+					</div>
+					<s:radio label="fechafin" name="fechafin" list="#{'2':'Duracion'}" value="2" class="col-xs-2 col-sm-2 col-md-2 control-label label-obligatorio"/>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<s:select id="slcListPrioridadTarea" list="#{'1':'1','2':'2','3':'3'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
 					</div>
 			</div>
 			<!-- Prioridad -->
@@ -121,6 +126,26 @@
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
 						<s:property value="'Creado'" />
+					</div>
+			</div>
+			
+			<!-- Dependencia -->
+			<div class="form-group col-sm-12">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL9')}" />
+					</label>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<s:select id="slcListRolTarea" list="#{'1':'Sin dependencia','2':'Tarea1','3':'Tarea2','4':'Tarea3'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<s:select id="slcListRolTarea" list="#{'1':'Final -> Inicial','2':'Final -> Final','3':'Inicial -> Final','4':'Inicial -> Inicial'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
 					</div>
 			</div>
 				
