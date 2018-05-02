@@ -10,57 +10,140 @@
 <body>
 <div class="container text-center">    
   <div class="row">
-    <div class="col-sm-3 well">
-      
-      <div class="alert alert-success fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <p><strong>Colaboradores</strong></p>
-        Aquí esta tu equipo de trabajo que colabora en esta actividad
-      </div>
-      <p><a href="#">Juan</a></p>
-      
-    </div>
-    <div class="col-sm-7">
     
-      <div class="row">
+    <div class="col-sm-10">
+    
+    <div class="row">
         <div class="col-sm-12">
           <div class="panel panel-default text-left">
             <div class="panel-body">
-              <p contenteditable="true">Status: Activo</p>
+              <h2>Tarea: Analisis de datos</h2>
                  
             </div>
           </div>
         </div>
+    </div>
+    
+    <div class="row">
+    <table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+					<thead>
+						<tr>
+
+							
+
+							<th>Analistas</th>
+
+							<th>Status</th>
+							
+							<th>Desempeño</th>
+
+							<th>Acciones</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Pablo Garcia</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE7FE;</i>
+						  		</a>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Veronica</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE7FE;</i>
+						  		</a>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Fernando</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE7FE;</i>
+						  		</a>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+				
+				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+					<thead>
+						<tr>
+
+							
+
+							<th>Responsable</th>
+
+							<th>Status</th>
+
+							<th>Acciones</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Pablo Garcia</td>
+
+							<td>Activo</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+								   <s:property value="''" />
+								   <i class="material-icons">&#xE5C9;</i>
+						  		</a>
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+    
       </div>
       
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>John</p>
-          
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Es ingeniero egresado de ... trabajo en</p>
-          </div>
-        </div>
-      </div>
       
       
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>Veronica</p>
+      
           
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Ingeniera de la carerra de.............................................</p>
-          </div>
-        </div>
-      </div>     
     </div>
     <div class="col-sm-2 well">
       <div class="thumbnail">
@@ -68,7 +151,8 @@
        
         <p><strong>Gestor de proyectos</strong></p>
         <p>Vier. 27 November 2015</p>
-        <button class="btn btn-primary">Info</button>
+        <a class="btn btn-default btn-primary" href="${#pageContext.request.contextPath}/sgps-enmaquetado/productividad/">
+			<s:property value="'Estadisticas'" /></a>
       </div>      
       <div class="well">
         <p>Mensajes</p>

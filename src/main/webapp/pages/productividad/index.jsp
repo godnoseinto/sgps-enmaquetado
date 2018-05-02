@@ -22,11 +22,11 @@
   
 <div class="container text-center">    
   <div class="row">
-    <div class="col-sm-10">
+    <div class="col-sm-12">
        <span class="etiquetas-label">Proyecto : </span>
 	   <span class="etiquetas-label">Gestor de proyectos</span>
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-12">
     
       <div class="row">
         <div class="col-sm-12">
@@ -174,18 +174,7 @@
       
          
     </div>
-    <div class="col-sm-2 well">
-      <div class="thumbnail">
-        <p>Ultimas Actualizaciones:</p>
-       
-        <p><strong>Gestor de proyectos</strong></p>
-        <p>Vier. 27 November 2015</p>
-        <button class="btn btn-primary">Info</button>
-      </div>      
-      <div class="well">
-        <p>Mensajes</p>
-      </div>
-    </div>
+    
   </div>
 </div>
 

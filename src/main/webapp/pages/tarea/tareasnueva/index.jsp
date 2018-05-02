@@ -10,113 +10,144 @@
 <body>
 <div class="container-fluid text-center">    
 	<div class="row content">
-  
-	  	
-	    
-	    <div class="col-sm-12 text-center">
-			   <span class="etiquetas-label">Proyecto : </span>
-			   <span class="etiquetas-label">Gestor de proyectos</span>
+  		<div class="col-md-12">
+				<h1 class="title">
+					<s:property value="%{getText('CUP5_TITLE')}" />
+				</h1>
 		</div>
-		<div class="col-sm-12 text-center">
-			   <p>Aplicación Movil</p>
+		<div class="row form-group">
+				<div class="col-md-8 col-md-offset-2">
+					<s:actionerror theme="%{varTheme}" />
+					<s:actionmessage theme="%{varTheme}" />
+				</div>
 		</div>
-		<div class="col-sm-12 text-center"> 
-			
+		
+		
+		<div class="col-sm-12 text-center" >
+		<fieldset class="form form-horizontal form-medium">
+			<legend class="form-section">
+					<s:text name="CUP5_SUBTITLE" />
+			</legend>
 			<s:form id="frmLogin" method="post" theme="simple"
-				cssClass="form form-horizontal form-medium"
 				action="">
-				<h3>Crear Tarea</h3>
-				<!-- Tarea -->
-				<div class="form-group col-sm-12">
+				
+			<!-- Nombre tarea -->
+			<div class="form-group col-sm-12">
 					<label
-						class="col-xs-2 col-sm-2 col-md-2 control-label">
-						<s:property value="'Nombre'" />
+						class="col-xs-2 col-sm-2 col-md-2 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL1')}" />
 					</label>
 					<div class="col-xs-12 col-sm-10 col-md-10">
 						<s:textfield cssClass="form-control campo"
-							cssClassError="input-error" name="model.nombreT" id="txTarea" />
-						<s:fielderror fieldName="tarea" cssClass="error"
+							cssClassError="input-error" name="model.nombreT" id="txTarea"  value=""/>
+						<s:fielderror fieldName="login" cssClass="error"
 							theme="%{#varTheme}" />
 					</div>
-				</div>
-				<!-- Inicio de la actividad -->
-				<div class="form-group col-sm-6">
+			</div>
+			
+			<!-- Autor -->
+			<div class="form-group col-sm-12">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Inicio'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-					
-					
-	                  <sj:datepicker value="today" id="dpkInicio" name="cuentaSel.inicio" displayFormat="dd.mm.yy" 
-					  label="Today" 
-					  cssClass="form-control date-picker" 
-					  showOn="focus"
-					   changeYear="true" changeMonth="true" inputAppndIcon="calendar"
-					   readonly="true" showAnim="fadeIn" minDate="+1y"/>
+						class="col-xs-2 col-sm-2 col-md-2 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL2')}" />
+					</label>
+					<div class="col-xs-12 col-sm-10 col-md-10 text-left">
+						<s:property value="'Carla Sanchez Vera'" />
 					</div>
-				</div>
-				<!-- Fin de la actividad -->
-				<div class="form-group col-sm-6">
+			</div>
+			
+			<!-- Fecha Inicio -->
+			<div class="form-group col-sm-6">
 					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Fin'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-					
-					
-	                  <sj:datepicker value="today" id="dpkFin" name="cuentaSel.fin" displayFormat="dd.mm.yy" 
-					  label="Today" 
-					  cssClass="form-control date-picker" 
-					  showOn="focus"
-					   changeYear="true" changeMonth="true" inputAppndIcon="calendar"
-					   readonly="true" showAnim="fadeIn" minDate="+1y"/>
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL3')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
+							cssClass="form-control date-picker" showOn="focus"
+							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
+							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
+							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" value="02/may/2018"/>
 					</div>
-				</div>
-				<!-- Prioridad -->
-				<div class="form-group col-sm-6">
-					<label
-						class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Prioridad'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-						<select name="prioridad">
-						  <option>Alta</option>
-						  <option>Media</option>
-						  <option>Baja</option>
-						</select>
-					</div>
-				</div>
-				<!-- Rol -->
-				<div class="form-group col-sm-6">
-					<label class="col-xs-2 col-sm-4 col-md-4 control-label"><s:property
-							value="'Rol'" /> </label>
-					<div class="col-xs-12 col-sm-8 col-md-8 ">
-						<select name="rol">
-						  <option>Programador</option>
-						  <option>Desarrollador</option>
-						  <option>Analista</option>
-						</select>
-					</div>
-				</div>
-				<!-- Descripcion -->
-				<div class="form-group col-sm-12">
-					<label
-						class="col-xs-2 col-sm-2 col-md-2 control-label"><s:property
-							value="'Descripcion'" /> </label>
-					<div class="col-xs-12 col-sm-10 col-md-10 ">
-						<s:textarea cssClass="form-control campo" name="model.Descripcion"
-							cssClassError="input-error" id="txTarea" />
-						<s:fielderror fieldName="descripcion" cssClass="error"
-							theme="%{#varTheme}" />
-					</div>
-				</div>
+			</div>
 				
-				<!-- BOTON ACEPTAR -->
-				<div class="form-group">
+			<!-- Fecha Término -->
+			<div class="form-group col-sm-6">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL4')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<sj:datepicker id="dpInicio" name="model.fechaEntrada"
+							cssClass="form-control date-picker" showOn="focus"
+							displayFormat="%{getText('mx.edu.eld.jsFormatDate')}"
+							inputAppendIcon="calendar" changeYear="true" changeMonth="true"
+							readonly="true" showAnim="fadeIn" parentTheme="bootstrap" value="02/may/2023"/>
+					</div>
+			</div>
+			<!-- Prioridad -->
+			<div class="form-group col-sm-4">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL5')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<s:select id="slcListPrioridadTarea" list="#{'1':'Alta','2':'Media','3':'Baja'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
+					</div>
+			</div>
+				
+			<!-- Rol -->
+			<div class="form-group col-sm-4">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL6')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<s:select id="slcListRolTarea" list="#{'1':'Programador','2':'Analista','3':'Desarrollador'}"
+							cssClass="form-control" cssErrorClass="field-error" />
+						<s:fielderror fieldName="model.idTipo" cssClass="error"
+							theme="%{#theme}" />
+					</div>
+			</div>
+				
+			<!-- Estatus -->
+			<div class="form-group col-sm-4">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL7')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8 text-left">
+						<s:property value="'Creado'" />
+					</div>
+			</div>
+				
+			<!-- Descripcion -->
+			<div class="form-group col-sm-12">
+					<label
+						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+						<s:property value="%{getText('CUP5_LBL8')}" />
+					</label>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<s:textarea cols="30" />
+					</div>
+			</div>
+				
+			<!-- BOTON GUARDAR -->
+			<div class="form-group col-sm-6">
 					<s:submit cssClass="btn btn-primary"
-						value="aceptar" />
-				</div>
+						value="Guardar" />
+			</div>
+			<!-- BOTON CANCELAR -->
+			<div class="form-group col-sm-6">
+					<s:submit cssClass="btn btn-primary"
+						value="Cancelar" />
+			</div>
 				
 			</s:form>
-			
+			</fieldset>
 		</div>
 	</div>
 </div>

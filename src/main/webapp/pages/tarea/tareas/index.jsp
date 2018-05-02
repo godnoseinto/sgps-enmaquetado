@@ -19,11 +19,12 @@
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#tareas">Tareas</a></li>
   <li><a data-toggle="tab" href="#gantt">Gantt</a></li>
+  <li><a data-toggle="tab" href="#recursos">Recursos</a></li>
 </ul>
 
 	<div class="container-fluid text-center">
 		<div class="row content tab-content">
-<div id="tareas" class="tab-pane fade in active">
+		<div id="tareas" class="tab-pane fade in active">
 			<div class="col-sm-12 text-left">
 				<h1>Tareas del proyecto</h1>
 				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
@@ -164,14 +165,153 @@
 		</div>
 		
 		 <div id="gantt" class="tab-pane fade">
-    <h2>Gantt</h2>
+    		<h2>Gantt</h2>
     
-		<div class="col-sm-12 text-center"> 
-			
-			
-			
-		</div>
-  </div>
+			<div class="col-sm-12 text-center"> 
+				d
+			</div>
+  		</div>
+  		
+  		<div id="recursos" class="tab-pane fade">
+    		<h2>Recursos</h2>
+    
+			<div class="col-sm-12 text-center"> 
+				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+					<thead>
+						<tr>
+
+							
+
+							<th>Analistas</th>
+
+							<th>Status</th>
+							
+							<th>Desempeño</th>
+
+							<th>Acciones</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Pablo Garcia</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Veronica</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Fernando</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+					<thead>
+						<tr>
+
+							
+
+							<th>Programadores</th>
+
+							<th>Status</th>
+							
+							<th>Desempeño</th>
+
+							<th>Acciones</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Luis Hernandes</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Maria</td>
+
+							<td>Activo</td>
+							
+							<td>Bueno</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Fernanda</td>
+
+							<td>No Activo</td>
+							
+							<td>Malo</td>
+
+							<td>
+						  		
+						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareas/show">
+					               <s:property value="''" />
+			  		               <i class="material-icons">&#xE8F4;</i>
+			  		            </a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+  		</div>
 		</div>
 	</div>
 </body>
