@@ -7,22 +7,27 @@
 <head>
 <jsp:text>
 	<![CDATA[
-		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/gantt-master/dist/frappe-gantt.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/pages/prueba/hola-mundo/js/index.js"></script>
 	]]>
 </jsp:text>
 </head>
 <body>
-	<!-- Body -->
-	<h2>Hola Mundo x 2</h2>
-	<p>Como estas</p>
-	
-	
 	<div class="container">
-		<h2>Interactive Gantt Chart entirely made in SVG!</h2>
-		<div class="gantt-target"></div>
-	</div>        
+		<!-- Body -->
+		<h2>Hola Mundo x 2</h2>
+		<p>Como estas</p>
 
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="gantt" class="col-md-12 gantt">
+					<!--  -->
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 </body>
 	</html>

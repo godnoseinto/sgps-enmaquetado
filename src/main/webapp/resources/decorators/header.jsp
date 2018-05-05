@@ -36,13 +36,19 @@
 				</s:elseif>
 
 				<s:if test="#usuario neq null">
-					<div
-						class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
-						<a
-							href="${#pageContext.request.contextPath}/sgps-enmaquetado/controlacceso/iniciar-sesion!terminarSesion">
-							<s:property value="#usuario" /><i class="material-icons">&#xE8FB;</i>
+					<ul class="nav navbar-top-links navbar-right">
+						<li class="dropdown"><a href="#"> <i
+								class="material-icons md-18 md-light">&#xE7FD;</i>
 						</a>
-					</div>
+							<ul class="dropdown-menu dropdown-messages">
+								<li><s:property value="#usuario"/></li>
+								<li><a href="#">Perfil de usuario</a></li>
+								<li><a href="#">Cuenta</a></li>
+								<li><a
+									href="${pageContext.request.contextPath}/controlacceso/iniciar-sesion!terminarSesion">Cerrar
+										Sesión</a></li>
+							</ul></li>
+					</ul>
 				</s:if>
 			</div>
 			<!-- /.navbar-collapse -->

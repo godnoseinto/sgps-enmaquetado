@@ -6,6 +6,11 @@
 	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- Head -->
+<jsp:text>
+	<![CDATA[
+		<script type="text/javascript" src="${pageContext.request.contextPath}/pages/proyecto/proyecto-manager/js/index.js"></script>
+	]]>
+</jsp:text>
 </head>
 <body>
 	<!-- Body -->
@@ -30,7 +35,7 @@
 
 
 			<div class="col-sm-12 text-left">
-				<table id="tblTareas"
+				<table id="tblProyectos"
 					class="table table-bordered table-hover table-condensed bg-1 table-responsive">
 					<thead>
 						<tr>
