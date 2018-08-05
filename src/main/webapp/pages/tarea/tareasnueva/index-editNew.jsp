@@ -5,161 +5,154 @@
 		contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" />
 	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<!-- Head -->
+<!-- Head -->
 </head>
 <body>
-<div class="container text-center">    
-  <div class="row">
-    
-    <div class="col-sm-10">
-    
-    <div class="row">
-        <div class="col-sm-12">
-          <div class="panel panel-default text-left">
-            <div class="panel-body">
-              <h2>Tarea: Analisis de datos</h2>
-                 
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <div class="row">
-    <table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
-					<thead>
-						<tr>
+	<div class="container text-center">
+		<div class="row">
 
-							
+			<div class="col-md-12">
+				<h1 class="title">
+					<s:property value="'Asignar Colaboradores a Tarea'" />
+				</h1>
+			</div>
 
-							<th>Analistas</th>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-default text-left">
+						<div class="panel-body">
+							<h2>Tarea: Analisis de datos</h2>
 
-							<th>Status</th>
-							
-							<th>Desempeño</th>
+						</div>
+					</div>
+				</div>
+			</div>
 
-							<th>Acciones</th>
+			<div class="row">
+				<div class="col-md-12">
+					<table id="tblTareas"
+						class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+						<thead>
+							<tr>
 
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Pablo Garcia</td>
 
-							<td>Activo</td>
-							
-							<td>Bueno</td>
 
-							<td>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
-								   <s:property value="''" />
-								   <i class="material-icons">&#xE7FE;</i>
-						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
-					               <s:property value="''" />
-			  		               <i class="material-icons">&#xE8F4;</i>
-			  		            </a>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>Veronica</td>
+								<th>Analistas</th>
 
-							<td>Activo</td>
-							
-							<td>Bueno</td>
+								<th>Status</th>
 
-							<td>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
-								   <s:property value="''" />
-								   <i class="material-icons">&#xE7FE;</i>
-						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
-					               <s:property value="''" />
-			  		               <i class="material-icons">&#xE8F4;</i>
-			  		            </a>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>Fernando</td>
+								<th>Desempeño</th>
 
-							<td>Activo</td>
-							
-							<td>Bueno</td>
+								<th>Acciones</th>
 
-							<td>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
-								   <s:property value="''" />
-								   <i class="material-icons">&#xE7FE;</i>
-						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
-					               <s:property value="''" />
-			  		               <i class="material-icons">&#xE8F4;</i>
-			  		            </a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				
-				
-				
-				<table id="tblTareas" class="table table-bordered table-hover table-condensed bg-1 table-responsive">
-					<thead>
-						<tr>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Pablo Garcia</td>
 
-							
+								<td>Activo</td>
 
-							<th>Responsable</th>
+								<td>Bueno</td>
 
-							<th>Status</th>
+								<td><a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+										<s:property value="''" /> <i class="material-icons">&#xE7FE;</i>
+								</a> <a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
+										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+								</a></td>
+							</tr>
 
-							<th>Acciones</th>
+							<tr>
+								<td>Veronica</td>
 
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Pablo Garcia</td>
+								<td>Activo</td>
 
-							<td>Activo</td>
+								<td>Bueno</td>
 
-							<td>
-						  		
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
-								   <s:property value="''" />
-								   <i class="material-icons">&#xE5C9;</i>
-						  		</a>
-						  		<a class="" href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
-					               <s:property value="''" />
-			  		               <i class="material-icons">&#xE8F4;</i>
-			  		            </a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-    
-      </div>
-      
-      
-      
-      
-          
-    </div>
-    <div class="col-sm-2 well">
-      <div class="thumbnail">
-        <p>Ultimas Actualizaciones:</p>
-       
-        <p><strong>Gestor de proyectos</strong></p>
-        <p>Vier. 27 November 2015</p>
-        <a class="btn btn-default btn-primary" href="${#pageContext.request.contextPath}/sgps-enmaquetado/productividad/">
-			<s:property value="'Estadisticas'" /></a>
-      </div>      
-      <div class="well">
-        <p>Mensajes</p>
-      </div>
-    </div>
-  </div>
-</div>
+								<td><a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+										<s:property value="''" /> <i class="material-icons">&#xE7FE;</i>
+								</a> <a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
+										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+								</a></td>
+							</tr>
+
+							<tr>
+								<td>Fernando</td>
+
+								<td>Activo</td>
+
+								<td>Bueno</td>
+
+								<td><a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+										<s:property value="''" /> <i class="material-icons">&#xE7FE;</i>
+								</a> <a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
+										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+								</a></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+					<table id="tblTareas"
+						class="table table-bordered table-hover table-condensed bg-1 table-responsive">
+						<thead>
+							<tr>
+
+
+
+								<th>Responsable</th>
+
+								<th>Status</th>
+
+								<th>Acciones</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Pablo Garcia</td>
+
+								<td>Activo</td>
+
+								<td><a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/tarea/tareasnueva/new">
+										<s:property value="''" /> <i class="material-icons">&#xE5C9;</i>
+								</a> <a class=""
+									href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/informacion/show">
+										<s:property value="''" /> <i class="material-icons">&#xE8F4;</i>
+								</a></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- Botones de aceptar y cancelar -->
+			<div class="outter-section">
+				<div class="text-right col-md-12">
+					<a class="btn btn-default btn-default-eld"
+						href="${pageContext.request.contextPath}/tarea/tareas">
+						<s:text name="mx.ipn.escom.boton.regresar" />
+					</a>
+				</div>
+			</div>
+	
 </body>
 	</html>
 </jsp:root>

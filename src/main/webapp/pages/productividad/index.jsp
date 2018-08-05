@@ -200,6 +200,15 @@
 		   
 		</div>
 	</div>
+	<!-- Botones de aceptar y cancelar -->
+			<div class="outter-section">
+				<div class="text-right col-md-12">
+					<a class="btn btn-default btn-default-eld"
+						href="${pageContext.request.contextPath}/tarea/tareas">
+						<s:text name="mx.ipn.escom.boton.regresar" />
+					</a>
+				</div>
+			</div>
 </body>
 	</html>
 </jsp:root>

@@ -16,7 +16,7 @@
 	<!-- Body -->
 	<!-- variables -->
 	<s:set var="listProyectos"
-		value="{{'ProyectoUno','Colaborador','01/04/2018','15/04/2023','En progreso','5','1','1'},{'ProyectoDos','lider','01/04/2019','15/04/2023','Pausado','15','2','2'},{'ProyectoTres','lider','01/04/2018','15/04/2022','Creado','0','3','2'}}"></s:set>
+		value="{{'ProyectoUno','Colaborador','01/04/2018','15/04/2023','En progreso','5','1','1'},{'ProyectoDos','Lider de proyecto','01/04/2019','15/04/2023','Pausado','15','2','2'},{'ProyectoTres','Lider de proyecto','01/04/2018','15/04/2022','Creado','0','3','2'}}"></s:set>
 
 	<div class="container-fluid text-center">
 		<div class="row content">
@@ -69,7 +69,7 @@
 											<s:property value="''" /> <i class="material-icons">&#xE150;</i>
 										</a>
 										<a class="" href="#"> <s:property value="''" /> <i
-											class="material-icons">&#xE872;</i>
+											onclick="eliminarProyecto(1)" class="material-icons">&#xE872;</i>
 										</a>
 										<a class=""
 											href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager/1">
@@ -124,6 +124,81 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<!-- Dialogo para eliminar un proyecto -->
+	<sj:dialog id="EliminarProyecto" modal="true"
+		title="%{getText('CUP1_TLT_DIALOG1')}" autoOpen="false"
+		openTopics="showDlgEliminarProyecto"
+		closeTopics="closeDlgEliminarProyecto" resizable="false"
+		draggable="false">
+		<s:url var="urlAction" action="proyecto-manager/"
+			includeContext="true" />
+		<s:hidden id="hdnUrlAction" value="%{#urlAction}" />
+		<s:form id="frmEliminarProyecto" action="" theme="simple">
+			<s:hidden name="_method" value="delete" />
+			<s:hidden id="hdnIdSel" name="idSel" />
+			<div class="row">
+				<div class="col-md-12">
+					<s:text name="MSG6">
+						<s:param>
+							<s:text name="AE_MIN_EL_PROYECTO" />
+						</s:param>
+					</s:text>
+				</div>
+			</div>
+			<!-- Botones de aceptar y cancelar -->
+			<div class="row">
+				<div class="text-right col-md-12">
+					<s:submit cssClass="btn btn-default btn-danger"
+						value="%{getText('mx.ipn.escom.boton.si')}" />
+					<a onclick="closeConfirmDlg()" class="btn btn-default btn-danger"><s:text
+							name="%{getText('mx.ipn.escom.boton.no')}" /></a>
+				</div>
+			</div>
+		</s:form>
+	</sj:dialog>
+
+	<!-- Dialogo para cambiar de estado finalizado -->
+	<sj:dialog id="EliminarProyecto" modal="true"
+		title="%{getText('CUP1_TLT_DIALOG2')}" autoOpen="false"
+		openTopics="showDlgFinalizarProyecto"
+		closeTopics="closeDlgFinalizarProyecto" resizable="false"
+		draggable="false">
+		<s:url var="urlAction" action="proyecto-manager!finalizarProyecto"
+			includeContext="true" />
+		<s:hidden id="hdnUrlActionF" value="%{#urlAction}" />
+		<!--<s:form id="frmFinalizarProyecto" action="" theme="simple"
+			method="post">-->
+			<s:hidden id="hdnIdSelF" name="idSel" />
+			<div class="row">
+				<div class="col-md-12">
+					<s:text name="MSG8" />
+					<!-- descripcion -->
+					<div class="form-group">
+						<label
+							class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
+							<s:property value="%{getText('CUP2_LBL5')}" />
+						</label>
+						<div class="col-xs-12 col-sm-8 col-md-8">
+							<s:textarea cols="40" name="descripcion" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Botones de aceptar y cancelar -->
+			<div class="row">
+				<div class="text-right col-md-12">
+					<a onclick="closeDlgFinalizarProyecto()"
+						class="btn btn-default btn-danger"><s:text
+							name="%{getText('mx.ipn.escom.boton.si')}" /></a>
+					<a onclick="closeDlgFinalizarProyecto()"
+						class="btn btn-default btn-danger"><s:text
+							name="%{getText('mx.ipn.escom.boton.no')}" /></a>
+				</div>
+			</div>
+		<!--</s:form>-->
+	</sj:dialog>
 </body>
 	</html>
 </jsp:root>

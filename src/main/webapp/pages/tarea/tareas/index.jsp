@@ -156,7 +156,9 @@
 
 				<div class="container">
 					<h2>Interactive Gantt Chart entirely made in SVG!</h2>
-					<div class="gantt-target"></div>
+					<div><img
+					src="${pageContext.request.contextPath}/resources/images/Diagrama+Gantt+Eustory.jpeg"
+					class="logo" /></div>
 				</div>
 			</div>
 
@@ -178,8 +180,6 @@
 								<th>Desempeño</th>
 
 								<th>Acciones</th>
-
-							<td>
 							</tr>
 						</thead>
 						<tbody>

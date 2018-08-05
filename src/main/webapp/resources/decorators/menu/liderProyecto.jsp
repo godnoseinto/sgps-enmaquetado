@@ -25,15 +25,5 @@
 			href="${#pageContext.request.contextPath}/sgps-enmaquetado/proyecto/proyecto-manager"
 			aria-expanded="false"><s:text name="menu.lider_proyecto.proyecto" /><b
 				class="caret"> <!--  --></b></a></li>
-		<li class="dropdown"><a title="${ttbCicloEscolar}"
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/colaboradores"
-			aria-expanded="false"><s:text
-					name="menu.lider_proyecto.colaborador" /><b class="caret"> <!--  --></b></a>
-		</li>
-		<li class="dropdown"><a title="${ttbCicloEscolar}"
-			href="${#pageContext.request.contextPath}/sgps-enmaquetado/colaborador/invitacion"
-			aria-expanded="false"><s:text
-					name="menu.lider_proyecto.invitacion" /><b class="caret"> <!--  --></b></a>
-		</li>
 	</ul>
 </jsp:root>

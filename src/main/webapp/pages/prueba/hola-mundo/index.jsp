@@ -17,8 +17,6 @@
 		<h2>Hola Mundo x 2</h2>
 		<p>Como estas</p>
 
-
-
 		<div class="row">
 			<div class="col-md-12">
 				<div id="gantt" class="col-md-12 gantt">

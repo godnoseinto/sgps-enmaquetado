@@ -159,20 +159,20 @@
 						<s:textarea cols="30" />
 					</div>
 			</div>
-				
-			<!-- BOTON GUARDAR -->
-			<div class="form-group col-sm-6">
-					<s:submit cssClass="btn btn-primary"
-						value="Guardar" />
-			</div>
-			<!-- BOTON CANCELAR -->
-			<div class="form-group col-sm-6">
-					<s:submit cssClass="btn btn-primary"
-						value="Cancelar" />
-			</div>
-				
 			</s:form>
 			</fieldset>
+			<!-- Botones de aceptar y cancelar -->
+			<div class="outter-section form-medium">
+				<div class="text-right col-md-12">
+					<a class="btn btn-default btn-default-eld"
+						href="${pageContext.request.contextPath}/tarea/tareas">
+						<s:text name="mx.ipn.escom.boton.aceptar" />
+					</a> <a class="btn btn-default btn-default-eld"
+						href="${pageContext.request.contextPath}/tarea/tareas">
+						<s:text name="mx.ipn.escom.boton.cancelar" />
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -14,14 +14,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import mx.ipn.escom.sgps.controlacceso.bs.FacebookBs;
 import mx.ipn.escom.sgps.controlacceso.bs.LoginBs;
 import mx.ipn.escom.sgps.controlacceso.bs.PerfilBs;
-import mx.ipn.escom.sgps.controlacceso.mapeo.PerfilUsuarioEnum;
 import mx.ipn.escom.sgps.controlacceso.mapeo.Usuario;
 import mx.ipn.escom.sgps.util.NombreObjetosSesion;
 import mx.ipn.escom.sgps.util.SessionManager;
 
 @Namespace("/controlacceso")
 @Results({ @Result(name = IniciarSesionAct.INICIA_FACEBOOK, location = "%{url}", type = "redirect"),
-		@Result(name = IniciarSesionAct.RESULT_LOGIN, location = "bienvenida/new", type = "redirectAction"),
+		@Result(name = IniciarSesionAct.RESULT_LOGIN, location = "../proyecto/proyecto-manager", type = "redirectAction"),
 		@Result(name = "success", location = "iniciar-sesion", type = "redirectAction") })
 @AllowedMethods({ "iniciarFacebook", "iniciarSesion", "terminarSesion" })
 public class IniciarSesionAct extends ActionSupport {
@@ -87,23 +86,7 @@ public class IniciarSesionAct extends ActionSupport {
 	}
 
 	private String redirectPorPerfil(Usuario usuario) {
-
-		Integer perfilActivo = perfilBs.obtenerPerfilActivo(usuario);
-		usuario.setIdPerfilActivo(perfilActivo);
-		SessionManager.put(NombreObjetosSesion.USUARIO_SESION, usuario);
-
-		if (perfilActivo.equals(PerfilUsuarioEnum.LIDER_PROYECTO.getIdPerfil())) {
-			LOGGER.info("Se inicio Sesion como Lider de proyecto");
-			return RESULT_LOGIN;
-		} else if (perfilActivo.equals(PerfilUsuarioEnum.JEFE_O_GERENTE_AREA.getIdPerfil())) {
-			LOGGER.info("Se inicio sesion como jefe de área");
-			return RESULT_LOGIN;
-		} else if (perfilActivo.equals(PerfilUsuarioEnum.COLABORADOR.getIdPerfil())) {
-			LOGGER.info("Se inicio sesion como colaborador");
-			return RESULT_LOGIN;
-		}
-
-		return INVALID_LOGIN;
+		return RESULT_LOGIN;
 	}
 
 	public String terminarSesion() {

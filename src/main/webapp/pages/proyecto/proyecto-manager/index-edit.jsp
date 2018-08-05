@@ -91,7 +91,7 @@
 						<s:property value="%{getText('CUP3_LBL5')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
-						<s:textarea cols="60" />
+						<s:textarea cols="60" value="esta es una descripcion de prueba"/>
 					</div>
 				</div>
 				
@@ -99,7 +99,7 @@
 				<div class="form-group">
 					<label
 						class="col-xs-2 col-sm-4 col-md-4 control-label label-obligatorio">
-						<s:property value="%{getText('CUP3_LBL5')}" />
+						<s:property value="%{getText('CUP3_LBL6')}" />
 					</label>
 					<div class="col-xs-12 col-sm-8 col-md-8">
 						<s:select id="slcListEstadoProyecto" list="#{'1':'Creado','2':'En progreso','3':'Pausado','4':'Cancelado','5','Finalizado'}"
